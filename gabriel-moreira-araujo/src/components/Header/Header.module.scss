@@ -1,0 +1,99 @@
+@use '@/styles/variables' as *;
+
+.container{
+    padding: 0 119px;
+
+    .containerinfoBadges{
+        display: flex;
+        gap: 119px;
+        justify-content: center;
+        align-items: center;
+        padding: 6px;
+        border-bottom: 1px solid #F0F0F0;
+        flex-wrap: wrap;
+
+        .infoBadge{
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            font-size: 12px;
+
+            strong{
+                color: $purple;
+            }
+        }
+    }   
+
+    .containerSearch{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        border-bottom: 1px solid #F0F0F0;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .containerBtnsSearch{
+            display: flex;
+            gap: 35.5px;
+            
+            button{
+                border: none;
+                background-color: transparent;
+            }
+        }
+
+        .inputSearch{
+            padding: 14px 16px;
+            width: 600px;
+            background-color: #F6F5F2;
+            border: none;
+            border-radius: 10px;
+        }
+    }
+
+    .menu{
+        box-shadow: 0 8px 16px 0 rgba(57, 48, 19, 0.12);
+        ul {
+            display: flex;
+            list-style: none;
+            font-size: 12px;
+            font-weight:600;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 10px 0;
+            margin: 0;
+
+            li{
+                cursor: pointer;
+
+                &:hover{
+                    color: $purple;
+                }
+            }
+
+            .signature{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+  .container{
+    padding: 0 20px;
+
+    .containerinfoBadges{
+        gap: 20px;
+    }
+
+    .menu{
+        ul{
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+    }
+  }
+}
