@@ -8,7 +8,7 @@ import UserCircle from '../../assets/icons/UserCircle.svg';
 import ShoppingCart from '../../assets/icons/ShoppingCart.svg';
 import CrownSimple from '../../assets/icons/CrownSimple.svg';
 
-import styles from'./Header.module.scss'
+import styles from './Header.module.scss';
 
 const Header = () => {
 

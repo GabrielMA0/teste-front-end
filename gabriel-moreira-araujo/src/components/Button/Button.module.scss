@@ -1,0 +1,20 @@
+@use '@/styles/variables' as *;
+
+@mixin color($bg-color, $text-color){
+    color: $text-color;
+    background-color: $bg-color;
+}
+
+.btn{
+    padding: 13px 54px;
+    width: 206px;
+    border: none;
+    border-radius: 5px;
+}
+
+.primary{
+    @include color($white, $blue);
+}
+.secondary{
+    @include color($yellow, $purple);
+}

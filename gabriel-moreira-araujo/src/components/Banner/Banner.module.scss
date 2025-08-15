@@ -1,0 +1,38 @@
+@use '@/styles/variables' as *;
+
+.banner{
+    background-image: url('../../assets/images/Banner.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 390px;
+    padding: 0 81px;
+
+    .title{
+        color: $white;
+        font-size: 48px;
+    }
+
+    .subTitle{
+        font-size: 32px;
+        color: $white;
+        padding-bottom: 41px;
+        font-weight:400;
+
+        strong{
+            color: $yellow;
+            font-weight: bold;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .banner{ 
+        padding: 0;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+}
