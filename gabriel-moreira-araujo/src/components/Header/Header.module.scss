@@ -19,7 +19,7 @@
             font-size: 12px;
 
             strong{
-                color: $purple;
+                color: $blue;
             }
         }
     }   
@@ -67,7 +67,7 @@
                 cursor: pointer;
 
                 &:hover{
-                    color: $purple;
+                    color: $blue;
                 }
             }
 
@@ -86,6 +86,10 @@
 
     .containerinfoBadges{
         gap: 20px;
+    }
+
+    .containerSearch{
+        justify-content: center;
     }
 
     .menu{
