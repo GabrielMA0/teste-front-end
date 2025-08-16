@@ -1,0 +1,66 @@
+@use '@/styles/variables' as *;
+
+@mixin active($weight, $text-color){
+    color: $text-color;
+    font-weight: $weight;
+}
+
+.containerRelatedProducts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .containerTitle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+
+        .title{
+            z-index: 1;
+            background-color: white;
+            padding: 0 34px;
+            font-size: 30;
+            font-weight: bold;
+            color: $blue;
+            text-align: center;
+        }
+        hr{
+            position: absolute;
+            width: 80%;
+        }
+    }
+
+    .btnSeeAll{
+        background-color: transparent;
+        border: none;
+        font-weight: bold;
+        margin-bottom: 24px;
+    }
+
+    .containerSubCategory{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .btnSubCategory{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 214px;
+            height: 40px;
+            background-color: $white;
+            border: 1px solid #BDBDBD;
+
+            &:hover{
+                @include active(bold, $blue)
+            }
+        }
+    }
+
+    .btnActive{
+        @include active(bold, $blue);
+    }
+}

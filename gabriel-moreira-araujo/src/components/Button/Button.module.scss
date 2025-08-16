@@ -10,10 +10,12 @@
     width: 206px;
     border: none;
     border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px
 }
 
 .primary{
-    @include color($white, $blue);
+    @include color($blue, $white);
 }
 .secondary{
     @include color($yellow, $purple);

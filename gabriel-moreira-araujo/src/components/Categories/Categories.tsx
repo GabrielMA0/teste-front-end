@@ -9,7 +9,7 @@ import FashionIcon from '@/assets/icons/moda 1.png'
 
 const Categories = () => {
     return(
-        <div className={styles.containerCategories}>
+        <section className={styles.containerCategories}>
             <div className={styles.containerCategory}>
                 <div className={styles.containerImg}>
                     <img src={Screens} alt="" />
@@ -58,7 +58,7 @@ const Categories = () => {
                 </div>
                 <span>Moda</span>
             </div>
-        </div>
+        </section>
     )
 }
 
