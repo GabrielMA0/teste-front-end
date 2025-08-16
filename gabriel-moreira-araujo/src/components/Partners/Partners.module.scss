@@ -1,0 +1,8 @@
+@use '@/styles/variables' as *;
+
+.containerPartners{
+    display: flex;
+    gap: 13px;
+    flex-wrap: wrap;
+    justify-content: center;
+}

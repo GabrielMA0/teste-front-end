@@ -3,17 +3,21 @@ import Banner from '@/components/Banner/Banner'
 import Categories from '@/components/Categories/Categories'
 import ContainerLayout from '@/components/ContainerLayout/ContainerLayout'
 import RelatedProducts from '@/components/RelatedProducts/RelatedProducts'
+import Partners from '@/components/Partners/Partners'
 
 const Home = () => {
 
   return (
     <>
-      <Header></Header>
+      <Header/>
       <main>
-        <Banner></Banner>
+        <Banner/>
         <ContainerLayout>
-          <Categories></Categories>
-          <RelatedProducts showBtnSeeAll={true}></RelatedProducts>
+          <Categories/>
+          <RelatedProducts showBtnSeeAll={false}/>
+          <Partners/>
+          <RelatedProducts showBtnSeeAll={true}/>
+          <Partners/>
         </ContainerLayout>
       </main>
     </>

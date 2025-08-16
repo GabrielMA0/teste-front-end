@@ -1,0 +1,35 @@
+@use '@/styles/variables' as *;
+
+.containerPartner{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url('../../assets/images/Partners.png');
+    background-size: cover;
+    background-position: center;
+    width: 634px;
+    height: 350px;
+    border-radius: 20px;
+    padding-left: 45px;
+    padding-bottom: 40px;
+    
+    .title{
+        font-size: 40px;
+        font-weight: bold;
+        padding-bottom: 8px;
+        color: $white;
+    }
+
+    .subTitle{
+        font-size: 16px;
+        color: $white;
+        width: 199.92px;
+        padding-bottom: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerPartner{ 
+       width: 80%;
+    }
+}

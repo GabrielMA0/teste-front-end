@@ -111,7 +111,7 @@ const Carousel = () => {
                                         <MoreIcon/>
                                     </button>
                                 </div>
-                                <Button styleBtn='secondary'>Comprar</Button>
+                                <Button styleBtn='secondary'>COMPRAR</Button>
                             </div>   
                         </div>
                     </div>

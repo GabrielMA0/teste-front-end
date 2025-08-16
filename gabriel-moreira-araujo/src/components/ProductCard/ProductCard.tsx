@@ -22,7 +22,7 @@ const ProductCard = (props: TypeProps) => {
             </span>
             <span className={styles.installment}>ou 2x de R$ 49,95 sem juros</span>
             <span className={styles.freight}>Frete grátis</span>
-            <Button styleBtn='primary'>Comprar</Button>
+            <Button styleBtn='primary'>COMPRAR</Button>
         </div>
     )
 }
