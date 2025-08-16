@@ -18,7 +18,7 @@ const ProductCard = (props: TypeProps) => {
                 {new Intl.NumberFormat('pt-BR', {
                 style: 'currency',
                 currency: 'BRL'
-                }).format(product.price)}
+                }).format(product.price || 0)}
             </span>
             <span className={styles.installment}>ou 2x de R$ 49,95 sem juros</span>
             <span className={styles.freight}>Frete grátis</span>

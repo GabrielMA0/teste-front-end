@@ -14,6 +14,7 @@
     .productName{
         font-size: 15px;
         font-weight: 200;
+        color: $darkGray;
     }
 
     .discount{
@@ -26,6 +27,7 @@
     .value{
         font-size: 20px;
         font-weight: bold;
+        color: $darkGray;
     }
 
     .installment, .freight{
