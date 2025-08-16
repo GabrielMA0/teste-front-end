@@ -18,14 +18,10 @@
         position: relative;
         width: 100%;
 
-        .title{
+        .titleMain{
             z-index: 1;
             background-color: white;
             padding: 0 34px;
-            font-size: 30;
-            font-weight: bold;
-            color: $blue;
-            text-align: center;
         }
         hr{
             position: absolute;

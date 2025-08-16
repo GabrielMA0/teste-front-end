@@ -4,6 +4,7 @@ import Categories from '@/components/Categories/Categories'
 import ContainerLayout from '@/components/ContainerLayout/ContainerLayout'
 import RelatedProducts from '@/components/RelatedProducts/RelatedProducts'
 import Partners from '@/components/Partners/Partners'
+import Brands from '@/components/Brands/Brands'
 
 const Home = () => {
 
@@ -18,6 +19,8 @@ const Home = () => {
           <Partners/>
           <RelatedProducts showBtnSeeAll={true}/>
           <Partners/>
+          <Brands/>
+          <RelatedProducts showBtnSeeAll={true}/>
         </ContainerLayout>
       </main>
     </>

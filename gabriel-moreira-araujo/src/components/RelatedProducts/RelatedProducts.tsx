@@ -1,6 +1,8 @@
 import styles from '@/components/relatedProducts/relatedProducts.module.scss'
-import { useState } from 'react'
 import Carousel from '@/components/Carousel/Carousel';
+import Title from '@/components/Title/Title';
+
+import { useState } from 'react'
 
 type Props = {
     showBtnSeeAll: boolean;
@@ -13,7 +15,7 @@ const RelatedProducts = (props: Props) => {
     return(
         <section className={styles.containerRelatedProducts}>
             <div className={styles.containerTitle}>
-                <h2 className={styles.title}>Produtos relacionados</h2>
+                <Title className={styles.titleMain}>Produtos relacionados</Title>
                 <hr />
             </div>
 
