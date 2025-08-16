@@ -1,12 +1,13 @@
-import ShieldCheck from '../../assets/icons/ShieldCheck.svg';
-import Truck from '../../assets/icons/Truck.svg';
-import CreditCard from '../../assets/icons/CreditCard.svg';
-import Logo from '../../assets/icons/Logo.svg';
-import Vector from '../../assets/icons/Vector.svg';
-import Heart from '../../assets/icons/Heart.svg';
-import UserCircle from '../../assets/icons/UserCircle.svg';
-import ShoppingCart from '../../assets/icons/ShoppingCart.svg';
-import CrownSimple from '../../assets/icons/CrownSimple.svg';
+import ShieldCheck from '@/assets/icons/ShieldCheck.svg';
+import Truck from '@/assets/icons/Truck.svg';
+import CreditCard from '@/assets/icons/CreditCard.svg';
+import Logo from '@/assets/icons/Logo.svg';
+import Vector from '@/assets/icons/Vector.svg';
+import Heart from '@/assets/icons/Heart.svg';
+import UserCircle from '@/assets/icons/UserCircle.svg';
+import ShoppingCart from '@/assets/icons/ShoppingCart.svg';
+import CrownSimple from '@/assets/icons/CrownSimple.svg';
+import SearchIcon from '@/assets/icons/SearchIcon.svg?react'
 
 import styles from './Header.module.scss';
 
@@ -33,7 +34,10 @@ const Header = () => {
 
       <div className={styles.containerSearch}>
         <img src={Logo} alt='logo da empresa' />
-        <input className={styles.inputSearch} type="text" placeholder='O que você está buscando?'/>
+        <div className={styles.containerFieldSearch}>
+          <input className={styles.inputSearch} type="text" placeholder='O que você está buscando?'/>
+          <SearchIcon/>
+        </div>
         <div className={styles.containerBtnsSearch}>
           <button>
             <img src={Vector} alt='logo da empresa' />

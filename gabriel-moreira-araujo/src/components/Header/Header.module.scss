@@ -32,6 +32,25 @@
         flex-wrap: wrap;
         gap: 20px;
 
+        .containerFieldSearch{
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            svg{
+                position: absolute;
+                right: 24px;
+            }
+
+            .inputSearch{
+                padding: 14px 16px;
+                width: 600px;
+                background-color: #F6F5F2;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+
         .containerBtnsSearch{
             display: flex;
             gap: 35.5px;
@@ -40,14 +59,6 @@
                 border: none;
                 background-color: transparent;
             }
-        }
-
-        .inputSearch{
-            padding: 14px 16px;
-            width: 600px;
-            background-color: #F6F5F2;
-            border: none;
-            border-radius: 10px;
         }
     }
 
@@ -90,6 +101,10 @@
 
     .containerSearch{
         justify-content: center;
+
+        .containerFieldSearch{
+            width: 100%;
+        }
     }
 
     .menu{
