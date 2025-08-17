@@ -1,0 +1,104 @@
+@use '@/styles/variables' as *;
+
+.footer{
+    display: flex;
+    align-items: center;
+    height: 282px;
+    background-color: #F4F4F4;
+    padding-left: 80px;
+    flex-wrap: wrap;
+
+    .footerBrands{
+
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid rgba(40, 40, 40, 0.18);
+        margin-right: 90px;
+
+        svg{
+            padding-bottom: 18px;
+        }
+
+        .footerDescription{
+            font-size: 14px;
+            font-weight: 300;
+            width: 354px;
+            color: $darkGray;
+            padding-bottom: 27px;
+        }
+        .footerSocial{
+            display: flex;
+            gap: 26px;
+        }
+
+    }
+
+    .footerLinks{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 100px;
+
+        .footerColums{
+            display: flex;
+            flex-direction: column;
+
+            .footerTitle{
+                font-size: 16px;
+                font-weight: bold;
+                padding-bottom: 20px;
+                color: rgba(34, 34, 34, 0.71);
+            }
+
+            .footerLink{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.footerContainerRight{
+    padding: 13px 0;
+    display: flex;
+    justify-content: center;
+
+    span{
+        font-size: 13px;
+        font-weight: 300;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer{
+        height: auto;
+        justify-content: center;
+        padding: 20px 0;
+        
+        .footerBrands{
+            margin: 0;
+            border-bottom: 1px solid rgba(40, 40, 40, 0.18); 
+            border-right: none;
+            margin-bottom: 20px;
+            width: 100%;
+
+            svg{
+                width: 100%;
+            }
+            
+            .footerDescription{
+                width: auto;
+                text-align: center;
+            }
+
+            .footerSocial{
+                justify-content: center;
+            }
+
+        }
+
+        .footerLinks{
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+}

@@ -6,13 +6,14 @@ import RelatedProducts from '@/components/RelatedProducts/RelatedProducts'
 import Partners from '@/components/Partners/Partners'
 import Brands from '@/components/Brands/Brands'
 import Newsletter from '@/components/Newsletter/Newsletter'
+import FooterNavigation from '@/components/FooterNavigation/FooterNavigation'
 
 const Home = () => {
 
   return (
     <>
       <Header/>
-      
+
       <main>
         <Banner/>
         <ContainerLayout>
@@ -28,6 +29,7 @@ const Home = () => {
 
       <footer>
         <Newsletter/>
+        <FooterNavigation/>
       </footer>
     </>
   )
