@@ -8,8 +8,7 @@ type Props = {
     showBtnSeeAll: boolean;
 }
 
-const RelatedProducts = (props: Props) => {
-    const {showBtnSeeAll = false} = props
+const RelatedProducts = ({showBtnSeeAll}: Props) => {
     const [subCategorySelected, setSubCategorySelected] = useState<string>('cellphone');
 
     return(
