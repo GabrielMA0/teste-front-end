@@ -5,12 +5,14 @@ import ContainerLayout from '@/components/ContainerLayout/ContainerLayout'
 import RelatedProducts from '@/components/RelatedProducts/RelatedProducts'
 import Partners from '@/components/Partners/Partners'
 import Brands from '@/components/Brands/Brands'
+import Newsletter from '@/components/Newsletter/Newsletter'
 
 const Home = () => {
 
   return (
     <>
       <Header/>
+      
       <main>
         <Banner/>
         <ContainerLayout>
@@ -23,6 +25,10 @@ const Home = () => {
           <RelatedProducts showBtnSeeAll={true}/>
         </ContainerLayout>
       </main>
+
+      <footer>
+        <Newsletter/>
+      </footer>
     </>
   )
 }
