@@ -1,6 +1,6 @@
 import styles from '@/components/Brands/Brands.module.scss'
 import Title from '@/components/Title/Title'
-import Logo from '@/assets/icons/Logo.svg?react'
+import Logo from '@/assets/icons/logo-icon.svg?react'
 
 const Brands = () => {
     return(

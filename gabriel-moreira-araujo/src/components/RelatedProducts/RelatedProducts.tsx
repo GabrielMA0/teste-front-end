@@ -55,10 +55,8 @@ const RelatedProducts = ({showBtnSeeAll}: Props) => {
                     </button>
                 </div>
             )}
-
-            {subCategorySelected === 'cellphone' &&(
-                <Carousel/>
-            )}
+            
+            <Carousel/>
 
         </section>
     )

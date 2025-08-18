@@ -42,6 +42,8 @@
                 right: 24px;
             }
 
+            
+
             .inputSearch{
                 padding: 14px 16px;
                 width: 600px;
@@ -58,6 +60,21 @@
             button{
                 border: none;
                 background-color: transparent;
+
+                &:hover{
+                    .boxArrowIcon{
+                        path{
+                            fill: $blue;
+
+                        }
+                    }
+
+                    svg{
+                        path{
+                            stroke: $blue
+                        }
+                    }
+                }
             }
         }
     }
@@ -75,17 +92,34 @@
             margin: 0;
 
             li{
-                cursor: pointer;
+                display: flex;
+                align-items: center;
 
                 &:hover{
                     color: $blue;
+
+                    svg{
+                        path{
+                            stroke: $blue
+                        }
+                    }
                 }
+            }
+
+            .selectedPage{
+                color: $blue;
             }
 
             .signature{
                 display: flex;
                 align-items: center;
                 gap: 12px;
+
+                a{
+                    display: flex;
+                    align-items: center;
+                    gap: 13px;
+                }
             }
         }
     }

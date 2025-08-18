@@ -8,7 +8,7 @@ import Brands from '@/components/Brands/Brands'
 import Newsletter from '@/components/Newsletter/Newsletter'
 import FooterNavigation from '@/components/FooterNavigation/FooterNavigation'
 
-const Home = () => {
+const OfferDay = () => {
 
   return (
     <>
@@ -35,4 +35,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default OfferDay

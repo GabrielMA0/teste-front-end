@@ -2,8 +2,8 @@ import styles from '@/components/Modal/Modal.module.scss'
 
 import Button from '@/components/Button/Button';
 import CloseIcon from '@/assets/icons/close-icon.svg?react';
-import MoreIcon from '@/assets/icons/icon-more.svg?react'
-import LessIcon from '@/assets/icons/icon-less.svg?react'
+import MoreIcon from '@/assets/icons/more-icon.svg?react'
+import LessIcon from '@/assets/icons/less-icon.svg?react'
 
 type Props = {
     productSelected: Product | null;

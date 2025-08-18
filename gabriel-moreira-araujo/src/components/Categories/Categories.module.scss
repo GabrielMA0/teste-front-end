@@ -8,18 +8,50 @@
     gap: 42px;
     cursor: pointer;
 
+     .selectedCategory{
+        color: $blue;
+
+        .containerImg{
+            background-color: $white !important;
+
+            svg{
+                path{
+                    fill: $blue;
+                }
+            }
+        }
+
+        span{
+            color: $blue;
+        }
+    }
+
     .containerCategory{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 22px;
         width: 128px;
+        background-color: transparent;
+        border: none;
+
+        svg{
+            path{
+                fill: black;
+            }
+        }
 
         &:hover{
             color: $blue;
 
             .containerImg{
                 background-color: $white;
+
+                svg{
+                    path{
+                        fill: $blue;
+                    }
+                }
             }
         }
 

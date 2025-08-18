@@ -1,8 +1,8 @@
 import styles from '@/components/FooterNavigation/FooterNavigation.module.scss'
-import Logo from '@/assets/icons/Logo.svg?react'
-import Instagram from '@/assets/icons/instagram.svg?react'
-import Facebook from '@/assets/icons/facebook.svg?react'
-import Linkedin from '@/assets/icons/linkedin.svg?react'
+import Logo from '@/assets/icons/logo-icon.svg?react'
+import Instagram from '@/assets/icons/instagram-icon.svg?react'
+import Facebook from '@/assets/icons/facebook-icon.svg?react'
+import Linkedin from '@/assets/icons/linkedin-icon.svg?react'
 
 const FooterNavigation = () => {
     return(

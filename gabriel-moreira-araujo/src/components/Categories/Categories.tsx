@@ -1,63 +1,66 @@
 import styles from '@/components/Categories/Categories.module.scss'
-import Screens from '@/assets/icons/screens.png'
-import SuperMarketIcon from '@/assets/icons/supermercados 1.png'
-import DrinksIcon from '@/assets/icons/whiskey.png'
-import ToolsIcon from '@/assets/icons/ferramentas 1.png'
-import HealthIcon from '@/assets/icons/cuidados-de-saude 1.png'
-import SportsIcon from '@/assets/icons/corrida 1.png'
-import FashionIcon from '@/assets/icons/moda 1.png'
+import ScreensIcon from '@/assets/icons/screens-icon.svg?react'
+import SuperMarketIcon from '@/assets/icons/super-market-icon.svg?react'
+import DrinksIcon from '@/assets/icons/drink-icon.svg?react'
+import ToolsIcon from '@/assets/icons/tools-icon.svg?react'
+import HealthIcon from '@/assets/icons/health-care-icon.svg?react'
+import SportsIcon from '@/assets/icons/race-icon.svg?react'
+import FashionIcon from '@/assets/icons/fashion-icon.svg?react'
+import { useState } from 'react'
 
 const Categories = () => {
+    const [category, setCategory] = useState<string>('screens');
+
     return(
         <section className={styles.containerCategories}>
-            <div className={styles.containerCategory}>
+            <button onClick={() => setCategory('screens')} className={`${category === 'screens' ? styles.selectedCategory : null} ${styles.containerCategory}`}>
                 <div className={styles.containerImg}>
-                    <img src={Screens} alt="" />
+                    <ScreensIcon/>
                 </div>
                 <span>Tecnologia</span>
-            </div>
+            </button>
 
-            <div className={styles.containerCategory}>
+            <button onClick={() => setCategory('superMarket')} className={`${category === 'superMarket' ? styles.selectedCategory : null} ${styles.containerCategory}`}>
                 <div className={styles.containerImg}>
-                    <img src={SuperMarketIcon} alt="" />
+                    <SuperMarketIcon/>
                 </div>
                 <span>Supermercado</span>
-            </div>
+            </button>
 
-            <div className={styles.containerCategory}>
+            <button onClick={() => setCategory('drinks')} className={`${category === 'drinks' ? styles.selectedCategory : null} ${styles.containerCategory}`}>
                 <div className={styles.containerImg}>
-                    <img src={DrinksIcon} alt="" />
+                    <DrinksIcon/>
                 </div>
                 <span>Bebidas</span>
-            </div>
+            </button>
 
-            <div className={styles.containerCategory}>
+            <button onClick={() => setCategory('tools')} className={`${category === 'tools' ? styles.selectedCategory : null} ${styles.containerCategory}`}>
                 <div className={styles.containerImg}>
-                    <img src={ToolsIcon} alt="" />
+                    <ToolsIcon/>
                 </div>
                 <span>Ferramentas</span>
-            </div>
+            </button>
 
-            <div className={styles.containerCategory}>
+            <button onClick={() => setCategory('health')} className={`${category === 'health' ? styles.selectedCategory : null} ${styles.containerCategory}`}>
                 <div className={styles.containerImg}>
-                    <img src={HealthIcon} alt="" />
+                    <HealthIcon/>
                 </div>
                 <span>Saúde</span>
-            </div>
+            </button>
 
-            <div className={styles.containerCategory}>
+            <button onClick={() => setCategory('sports')} className={`${category === 'sports' ? styles.selectedCategory : null} ${styles.containerCategory}`}>
                 <div className={styles.containerImg}>
-                    <img src={SportsIcon} alt="" />
+                    <SportsIcon/>
                 </div>
                 <span>Esportes e Fitness</span>
-            </div>
+            </button>
 
-            <div className={styles.containerCategory}>
+            <button onClick={() => setCategory('fashion')} className={`${category === 'fashion' ? styles.selectedCategory : null} ${styles.containerCategory}`}>
                 <div className={styles.containerImg}>
-                    <img src={FashionIcon} alt="" />
+                    <FashionIcon/>
                 </div>
                 <span>Moda</span>
-            </div>
+            </button>
         </section>
     )
 }

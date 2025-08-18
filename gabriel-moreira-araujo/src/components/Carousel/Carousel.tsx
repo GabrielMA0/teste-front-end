@@ -1,5 +1,5 @@
 import ProductCard from '@/components/ProductCard/ProductCard';
-import arrowSlide from '@/assets/icons/arrow-right.svg';
+import ArrowSlideIcon from '@/assets/icons/arrow-right-icon.svg?react';
 import { fetchProducts } from '@/service/fetchProducts';
 import Modal from '@/components/Modal/Modal'
 
@@ -61,11 +61,11 @@ const Carousel = () => {
             </Swiper>
 
             <button type='button' className='slideNextBtn'>
-                <img src={arrowSlide} alt="icone de uma seta para direita" />
+                <ArrowSlideIcon/>
             </button>
 
             <button type='button' className='slidePrevBtn'>
-                <img src={arrowSlide} alt="icone de uma seta para esquerda" />
+                <ArrowSlideIcon/>
             </button>
 
         </div>
