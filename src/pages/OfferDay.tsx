@@ -1,0 +1,38 @@
+import Header from '@/components/Header/Header'
+import Banner from '@/components/Banner/Banner'
+import Categories from '@/components/Categories/Categories'
+import ContainerLayout from '@/components/ContainerLayout/ContainerLayout'
+import RelatedProducts from '@/components/RelatedProducts/RelatedProducts'
+import Partners from '@/components/Partners/Partners'
+import Brands from '@/components/Brands/Brands'
+import Newsletter from '@/components/Newsletter/Newsletter'
+import FooterNavigation from '@/components/FooterNavigation/FooterNavigation'
+
+const OfferDay = () => {
+
+  return (
+    <>
+      <Header/>
+
+      <main>
+        <Banner/>
+        <ContainerLayout>
+          <Categories/>
+          <RelatedProducts showBtnSeeAll={false}/>
+          <Partners/>
+          <RelatedProducts showBtnSeeAll={true}/>
+          <Partners/>
+          <Brands/>
+          <RelatedProducts showBtnSeeAll={true}/>
+        </ContainerLayout>
+      </main>
+
+      <footer>
+        <Newsletter/>
+        <FooterNavigation/>
+      </footer>
+    </>
+  )
+}
+
+export default OfferDay
